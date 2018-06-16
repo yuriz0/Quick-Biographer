@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <!--
 
@@ -8,148 +7,157 @@
     MIT License
 
 -->
-    <head prefix="og: http://ogp.me/ns#">
+
+<head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="{Favicon}">
     <link rel="apple-touch-icon" href="{PortraitURL-128}" />
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
-    
-<!-- reset.css -->
+
+    <!-- reset.css -->
     <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/s/njrlwovhxb0e9iv/reset.css">
-<!--style-->
+    <!--style-->
     <link rel="stylesheet" type="text/css" media="screen" href="https://dl.dropboxusercontent.com/s/w6y1q0bjk4afdud/quickbiographer.css">
-    <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/s/jlrk8mlg61owfoo/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/s/jlrk8mlg61owfoo/slick-theme.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
-    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/1.3.6/hint.min.css" rel="stylesheet" />
-    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <!--tumblr独自変数指定 -->
 
-<!--tumblr独自変数指定 -->
+    <meta name="color:Dark Color" content="#c0c0c0" />
 
-<meta name="color:Dark Color" content="#c0c0c0" />
+    <meta name="image:Photo1" content="" />
+    <meta name="image:Photo2" content="" />
 
-<meta name="image:Photo1" content="" />
-<meta name="image:Photo2" content="" />
+    <meta name="if:Multiple Photos" content="" />
 
-<meta name="if:Multiple Photos" content="" />
+    <meta name="if:Mail Address" content="1" />
+    <meta name="if:Blog" content="1" />
+    <meta name="if:Twitter" content="1" />
+    <meta name="if:SoundCloud" content="1" />
+    <meta name="if:Mixcloud" content="1" />
+    <meta name="if:Instagram" content="1" />
+    <meta name="if:YouTube" content="1" />
 
-<meta name="if:Mail Address" content="1" />
-<meta name="if:Blog" content="1" />
-<meta name="if:Twitter" content="1" />
-<meta name="if:SoundCloud" content="1" />
-<meta name="if:Mixcloud" content="1" />
-<meta name="if:Instagram" content="1" />
-<meta name="if:YouTube" content="1" />
+    <meta name="if:SoundCloud Embed" content="1" />
+    <meta name="if:Mixcloud Embed" content="1" />
 
-<meta name="if:SoundCloud Embed" content="1" />
-<meta name="if:Mixcloud Embed" content="1" />
+    <meta name="text:Credit" content="所属・クレジット" />
 
-<meta name="text:Credit" content="所属・クレジット" />
+    <meta name="text:Mailto" content="" />
+    <meta name="text:Blog URL" content="" />
+    <meta name="text:Twitter Username" content="" />
+    <meta name="text:SoundCloud Username" content="" />
+    <meta name="text:Mixcloud Username" content="" />
+    <meta name="text:Instagram Username" content="" />
+    <meta name="text:YouTube Username" content="" />
 
-<meta name="text:Mailto" content="" />
-<meta name="text:Blog URL" content="" />
-<meta name="text:Twitter Username" content="" />
-<meta name="text:SoundCloud Username" content="" />
-<meta name="text:Mixcloud Username" content="" />
-<meta name="text:Instagram Username" content="" />
-<meta name="text:YouTube Username" content="" />
+    <meta name="text:Heading" content="見出し" />
 
-<meta name="text:Heading" content="見出し" />
-
-<!-- 出演情報類の追加はここを増やす -->
-<meta name="text:info1" content="20XX/YY/ZZ(Sat.) 24:00- Hoge night @club hogehoge" />
-<meta name="text:info1 URL" content="#" />
-<meta name="text:info2" content="20XX/YY/WW(Sun.) TBA" />
-<meta name="text:info2 URL" content="#" />
-<meta name="text:info3" content="" />
-<meta name="text:info3 URL" content="#" />
-
-
-<meta name="text:Notes For Information" content="情報の備考などを書く" />
-
-<!-- 数字での入力に注意 -->
-<meta name="text:SoundCloud ID" content="" />
+    <!-- 出演情報類の追加はここを増やす -->
+    <meta name="text:info1" content="20XX/YY/ZZ(Sat.) 24:00- Hoge night @club hogehoge" />
+    <meta name="text:info1 URL" content="#" />
+    <meta name="text:info2" content="20XX/YY/WW(Sun.) TBA" />
+    <meta name="text:info2 URL" content="#" />
+    <meta name="text:info3" content="" />
+    <meta name="text:info3 URL" content="#" />
 
 
-<meta name="text:Google Analytics ID" content="" />
+    <meta name="text:Notes For Information" content="情報の備考などを書く" />
+
+    <!-- 数字での入力に注意 -->
+    <meta name="text:SoundCloud ID" content="" />
 
 
- <!-- *ユーザー指定可能部分* -->
+    <meta name="text:Google Analytics ID" content="" />
+
+
+    <!-- *ユーザー指定可能部分* -->
     <style type="text/css">
-    
-       
-@media only screen and (min-width: 769px) {
-        .header {
-            background-color: {color:Dark Color};
-            color: #ffffff;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
-            justify-content: flex-end;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end;
-            height: 60px;
-    }
+        @media only screen and (min-width: 769px) {
+            .header {
+                background-color: {
+                    color: Dark Color
+                }
+                ;
+                color: #ffffff;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+                -webkit-box-align: end;
+                -ms-flex-align: end;
+                align-items: flex-end;
+                height: 60px;
+            }
         }
-        
-@media only screen and (max-width: 768px) {
-        .header {
-            background-color: {color:Dark Color};
-            color: #ffffff;
-            height: 80px;
-            padding: 20px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
-            justify-content: flex-end;
-    }
+
+        @media only screen and (max-width: 768px) {
+            .header {
+                background-color: {
+                    color: Dark Color
+                }
+                ;
+                color: #ffffff;
+                height: 80px;
+                padding: 20px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+            }
         }
-        
-    .headingcontent{
-        margin-top: 100px;
-    }
-    
-        
-        
-.dark{ 
-            background-color: {color:Dark Color};
-            color: #ffffff; 
+
+        .headingcontent {
+            margin-top: 100px;
+        }
+
+
+
+        .dark {
+            background-color: {
+                color: Dark Color
+            }
+            ;
+            color: #ffffff;
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
-.permapage{
-    margin-top: 100px;
-    
-}
+        .permapage {
+            margin-top: 100px;
 
-.article{
-    margin-bottom: 1em;
-}
+        }
+
+        .article {
+            margin-bottom: 1em;
+        }
 
 
-.footerpg {
-    font-size:small;
-    text-align: center;
-    background-color: {color:Dark Color};
-    color: #ffffff; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-}
+        .footerpg {
+            font-size: small;
+            text-align: center;
+            background-color: {
+                color: Dark Color
+            }
+            ;
+            color: #ffffff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 100%;
+        }
 
-{CustomCSS}
-        
+            {
+            CustomCSS
+        }
     </style>
 
 
@@ -160,249 +168,179 @@
 
 
 <body>
-<section id="playergraphy">
-    <div class="container-fluid">
-        <!-- header -->
-        <div class="row">
-<nav class="header navbar-fixed-top">
-  <a class="nav-button" href="#">
+    <section id="playergraphy">
+        <div class="container-fluid">
+            <!-- header -->
+            <div class="row">
+                <nav class="header navbar-fixed-top">
+                    <a class="nav-button" href="#">
     <span></span>
     <span></span>
     <span></span>
   </a>
-  <div class="nav-wrap">
-    <ul class="navpg">
-      <li><a href="/">INDEX</a></li>
-      {block:HasPages}
-      {block:Pages}
-      <li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
-    </ul>
-  </div>
-</nav>
-</div><!--/row header-->
+                    <div class="nav-wrap">
+                        <ul class="navpg">
+                            <li><a href="/">INDEX</a></li>
+                            {block:HasPages} {block:Pages}
+                            <li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--/row header-->
 
 
-{block:IndexPage}
-<div class="row row-eq-height headingcontent">
-<!-- artist image-->
-    
-<div class="col-xs-12 col-sm-6">
-<div class="photopg center-block">
-    <div><img src="{image:Photo1}"></div>
-    {block:IfMultiplePhotos}
-    <div><img src="{image:Photo2}"></div>
-    {/block:IfMultiplePhotos}
-</div>
-</div>
+            {block:IndexPage}
+            <div class="row row-eq-height headingcontent">
+                <!-- artist image-->
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="photopg center-block">
+                        <div><img src="{image:Photo1}"></div>
+                        {block:IfMultiplePhotos}
+                        <div><img src="{image:Photo2}"></div>
+                        {/block:IfMultiplePhotos}
+                    </div>
+                </div>
 
 
-<!-- artist image end-->
-<!-- biography -->
-<div class="col-xs-12 col-sm-6">
+                <!-- artist image end-->
+                <!-- biography -->
+                <div class="col-xs-12 col-sm-6">
 
-<!-- 名前-->
-<h1 class="name firstcontent">{title}</h1>
+                    <!-- 名前-->
+                    <h1 class="name firstcontent">{title}</h1>
 
-<!-- クレジット・所属 -->
-<h4 class="credit firstcontent">{text:Credit}</h4>
+                    <!-- クレジット・所属 -->
+                    <h4 class="credit firstcontent">{text:Credit}</h4>
 
-<!--バイオグラフィー,HTMLによる装飾対応。 -->
-<p class="biography firstcontent">
-{description}
-</p>
-
-
-<!-- Social links --> 
-<ul class="sociallinks list-inline">
-
-{block:IfMailAddress}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="Mail"><a href="mailto:{text:Mailto}"><i class="fas fa-envelope fa-2x"></i></a></li>
-{/block:IfMailAddress}
-
-{block:IfBlog}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="Blog"><a href="{text:Blog URL}" target="_blank"><i class="fas fa-book fa-2x"></i></a></li>
-{/block:IfBlog}
-
-{block:IfTwitter}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="Twitter"><a href="https://twitter.com/{text:Twitter Username}" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-{/block:IfTwitter}
-
-{block:IfSoundCloud}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="SoundCloud"><a href="https://soundcloud.com/{text:SoundCloud Username}" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a></li>
-{/block:IfSoundCloud}
-
-{block:IfMixcloud}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="Mixcloud"><a href="https://www.mixcloud.com/{text:Mixcloud Username}/" target="_blank"><i class="fab fa-mixcloud fa-2x"></i></a></li>
-{/block:IfMixcloud}
-
-{block:IfInstagram}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="Instagram"><a href="http://instagram.com/{text:Instagram Username}" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-{/block:IfInstagram}
-
-{block:IfYouTube}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="YouTube"><a href="http://youtube.com/{text:YouTube Username}" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
-{/block:IfYoutube}
-    
-</ul>
-    
-</div>
-</div><!-- /row -->
-        
-<!-- second contents -->
-<div class="row dark row-eq-height">
-<div class="col-xs-12">
-<div class="information">
-<h1>{text:Heading}</h1>
-    
-<ul class="secondcontent list-unstyled">
-    
-<!-- 出演情報はここの項目をコピー・番号を変えて複製 -->
-<li><a href="{text:info1 URL}" id="info1" target="_blank">{text:info1}</a></li>
-<li><a href="{text:info2 URL}" id="info2" target="_blank">{text:info2}</a></li>
-<li><a href="{text:info3 URL}" id="info3" target="_blank">{text:info3}</a></li>
+                    <!--バイオグラフィー,HTMLによる装飾対応。 -->
+                    <p class="biography firstcontent">
+                        {description}
+                    </p>
 
 
-</ul>
+                    <!-- Social links -->
+                    <ul class="sociallinks list-inline">
 
-<span class="description">
+                        {block:IfMailAddress}
+                        <li class="hint--bottom hint--rounded sociallink-item" data-hint="Mail"><a href="mailto:{text:Mailto}"><i class="fas fa-envelope fa-2x"></i></a></li>
+                        {/block:IfMailAddress} {block:IfBlog}
+                        <li class="hint--bottom hint--rounded sociallink-item" data-hint="Blog"><a href="{text:Blog URL}" target="_blank"><i class="fas fa-book fa-2x"></i></a></li>
+                        {/block:IfBlog} {block:IfTwitter}
+                        <li class="hint--bottom hint--rounded sociallink-item" data-hint="Twitter"><a href="https://twitter.com/{text:Twitter Username}" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        {/block:IfTwitter} {block:IfSoundCloud}
+                        <li class="hint--bottom hint--rounded sociallink-item" data-hint="SoundCloud"><a href="https://soundcloud.com/{text:SoundCloud Username}" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a></li>
+                        {/block:IfSoundCloud} {block:IfMixcloud}
+                        <li class="hint--bottom hint--rounded sociallink-item" data-hint="Mixcloud"><a href="https://www.mixcloud.com/{text:Mixcloud Username}/" target="_blank"><i class="fab fa-mixcloud fa-2x"></i></a></li>
+                        {/block:IfMixcloud} {block:IfInstagram}
+                        <li class="hint--bottom hint--rounded sociallink-item" data-hint="Instagram"><a href="http://instagram.com/{text:Instagram Username}" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        {/block:IfInstagram} {block:IfYouTube}
+                        <li class="hint--bottom hint--rounded sociallink-item" data-hint="YouTube"><a href="http://youtube.com/{text:YouTube Username}" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        {/block:IfYoutube}
+
+                    </ul>
+
+                </div>
+            </div>
+            <!-- /row -->
+
+            <!-- second contents -->
+            <div class="row dark row-eq-height">
+                <div class="col-xs-12">
+                    <div class="information">
+                        <h1>{text:Heading}</h1>
+
+                        <ul class="secondcontent list-unstyled">
+
+                            <!-- 出演情報はここの項目をコピー・番号を変えて複製 -->
+                            <li><a href="{text:info1 URL}" id="info1" target="_blank">{text:info1}</a></li>
+                            <li><a href="{text:info2 URL}" id="info2" target="_blank">{text:info2}</a></li>
+                            <li><a href="{text:info3 URL}" id="info3" target="_blank">{text:info3}</a></li>
+
+
+                        </ul>
+
+                        <span class="description">
 {text:Notes For Information}
 </span>
-</div>
-</div>
-</div>
+                    </div>
+                </div>
+            </div>
 
-<!-- embed -->
-<div class="row">
-{block:IfSoundCloudEmbed}
-    {block:IfMixcloudEmbed}
-<div class="col-xs-12 col-sm-6 embedbox">
-<iframe width="80%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{text:SoundCloud ID}" class="embed"></iframe>
-</div>
-{/block:IfMixcloudEmbed}
+            <!-- embed -->
+            <div class="row">
+                {block:IfSoundCloudEmbed} {block:IfMixcloudEmbed}
+                <div class="col-xs-12 col-sm-6 embedbox">
+                    <iframe width="80%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{text:SoundCloud ID}" class="embed"></iframe>
+                </div>
+                {/block:IfMixcloudEmbed} {block:IfNotMixcloudEmbed}
+                <div class="col-xs-12 embedbox">
+                    <iframe width="80%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{text:SoundCloud ID}" class="embed"></iframe>
+                </div>
+                {/block:IfNotMixcloudEmbed} {/block:IfSoundCloudEmbed} {block:IfMixcloudEmbed} {block:IfSoundCloudEmbed}
+                <div class="col-xs-12 col-sm-6 embedbox">
+                    <iframe width="80%" height="300" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2F{text:Mixcloud Username}%2F" frameborder="0" class="embed"></iframe>
+                </div>
+                {/block:IfSoundCloudEmbed} {block:IfNotSoundCloudEmbed}
+                <div class="col-xs-12 embedbox">
+                    <iframe width="80%" height="300" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2F{text:Mixcloud Username}%2F" frameborder="0" class="embed"></iframe>
+                </div>
+                {/block:IfNotSoundCloudEmbed} {/block:IfMixcloudEmbed}
 
+            </div>
+            <!-- /embed -->
 
-{block:IfNotMixcloudEmbed}
-<div class="col-xs-12 embedbox">
-<iframe width="80%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{text:SoundCloud ID}" class="embed"></iframe>
-</div>
-{/block:IfNotMixcloudEmbed}
-{/block:IfSoundCloudEmbed}
+        </div>
+        <!-- /containerfluid -->
 
-
-{block:IfMixcloudEmbed}
-
-{block:IfSoundCloudEmbed}
-<div class="col-xs-12 col-sm-6 embedbox">
-<iframe width="80%" height="300" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2F{text:Mixcloud Username}%2F" frameborder="0" class="embed"></iframe>
-</div>
-{/block:IfSoundCloudEmbed}
-
-{block:IfNotSoundCloudEmbed}
-<div class="col-xs-12 embedbox">
-<iframe width="80%" height="300" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2F{text:Mixcloud Username}%2F" frameborder="0" class="embed"></iframe>
-</div>
-{/block:IfNotSoundCloudEmbed}
-
-{/block:IfMixcloudEmbed}
-
-</div><!-- /embed --> 
-
-</div><!-- /containerfluid -->
-
-{/block:IndexPage}
+        {/block:IndexPage}
 
 
-<!--固定ページ用 -->
-{block:PermalinkPage} 
+        <!--固定ページ用 -->
+        {block:PermalinkPage}
 
-<div class="container-fluid permapage">
-<div class="row">
-<div class="col-xs-12">
+        <div class="container-fluid permapage">
+            <div class="row">
+                <div class="col-xs-12">
 
- {block:Posts}
- <h2 class="article">{Title}</h2>
-{Body}
-{/block:Posts}
-</div>
-</div>
-</div>
+                    {block:Posts}
+                    <h2 class="article">{Title}</h2>
+                    {Body} {/block:Posts}
+                </div>
+            </div>
+        </div>
 
-{/block:PermalinkPage}
+        {/block:PermalinkPage}
 
 
-<!-- フッター (Please Do not delete this section)-->
-<footer class="footerpg">
+        <!-- フッター (Please Do not delete this section)-->
+        <footer class="footerpg">
 
- {CopyrightYears} &copy; {title} <br>
-Quick Biographer theme by <a href="https://yuriz0-lz.tumblr.com" target="_blank">Yurizo</a>
+            {CopyrightYears} &copy; {title} <br> Quick Biographer theme by <a href="https://yuriz0-lz.tumblr.com" target="_blank">Yurizo</a>
 
-</footer>
+        </footer>
 
-</section>
+    </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript" src="https://dl.dropboxusercontent.com/s/oqv5ys1ibpn3oap/qb.js"></script>
 
-<!-- slick.js-->
-<script type="text/javascript">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={text:Google Analytics ID}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-/*carousel*/
-   $(function() 
-     {$('.photopg').slick({
-  autoplay: true,
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 500,
-    });
-});
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-/* hamburger */
-
-    $(function() {
-        $(".nav-button").on("click", function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(".nav-wrap")
-        .addClass("close")
-        .removeClass("open");
-    } 
-    else {
-      $(this).addClass("active");
-      $(".nav-wrap")
-        .addClass("open")
-        .removeClass("close");
-    }
-  });
-});
-
-$(function() {
-    
-$('li>a').each(function() {
-	var $href = $(this).attr('href');
-	if ($href == "#") {
-		$(this).addClass('disabled');
-	}
-    
-    $('.disabled').removeAttr('href');
-    
-});
-
-});
-    
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={text:Google Analytics ID}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '{text:Google Analytics ID}');
-</script>
+        gtag('config', '{text:Google Analytics ID}');
+    </script>
 
 </body>
 
