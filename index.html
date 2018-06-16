@@ -2,7 +2,7 @@
 <html>
 <!--
 
-    Theme:Quick Biographer
+    Theme:Quick Biographer(β)
     by @yuriz0
     (c) 2018 Yurizo
     MIT License
@@ -277,16 +277,35 @@ body{
 <!-- embed -->
 <div class="row">
 {block:IfSoundCloudEmbed}
+    {block:IfMixcloudEmbed}
 <div class="col-xs-12 col-sm-6 embedbox">
 <iframe width="80%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{text:SoundCloud ID}" class="embed"></iframe>
-
 </div>
+{/block:IfMixcloudEmbed}
+
+
+{block:IfNotMixcloudEmbed}
+<div class="col-xs-12 embedbox">
+<iframe width="80%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{text:SoundCloud ID}" class="embed"></iframe>
+</div>
+{/block:IfNotMixcloudEmbed}
 {/block:IfSoundCloudEmbed}
 
+
 {block:IfMixcloudEmbed}
+
+{block:IfSoundCloudEmbed}
 <div class="col-xs-12 col-sm-6 embedbox">
 <iframe width="80%" height="300" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2F{text:Mixcloud Username}%2F" frameborder="0" class="embed"></iframe>
 </div>
+{/block:IfSoundCloudEmbed}
+
+{block:IfNotSoundCloudEmbed}
+<div class="col-xs-12 embedbox">
+<iframe width="80%" height="300" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2F{text:Mixcloud Username}%2F" frameborder="0" class="embed"></iframe>
+</div>
+{/block:IfNotSoundCloudEmbed}
+
 {/block:IfMixcloudEmbed}
 
 </div><!-- /embed --> 
