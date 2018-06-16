@@ -39,7 +39,7 @@
 <meta name="if:Multiple Photos" content="" />
 
 <meta name="if:Mail Address" content="1" />
-<meta name="if:Brog" content="1" />
+<meta name="if:Blog" content="1" />
 <meta name="if:Twitter" content="1" />
 <meta name="if:SoundCloud" content="1" />
 <meta name="if:Mixcloud" content="1" />
@@ -52,7 +52,7 @@
 <meta name="text:Credit" content="所属・クレジット" />
 
 <meta name="text:Mailto" content="" />
-<meta name="text:Brog URL" content="" />
+<meta name="text:Blog URL" content="" />
 <meta name="text:Twitter Username" content="" />
 <meta name="text:SoundCloud Username" content="" />
 <meta name="text:Mixcloud Username" content="" />
@@ -82,9 +82,6 @@
  <!-- *ユーザー指定可能部分* -->
     <style type="text/css">
     
-body{
-        a:link: {color:Link Color}
-    }
        
 @media only screen and (min-width: 769px) {
         .header {
@@ -222,9 +219,9 @@ body{
 <li class="hint--bottom hint--rounded sociallink-item" data-hint="Mail"><a href="mailto:{text:Mailto}"><i class="fas fa-envelope fa-2x"></i></a></li>
 {/block:IfMailAddress}
 
-{block:IfBrog}
-<li class="hint--bottom hint--rounded sociallink-item" data-hint="Brog"><a href="{text:Brog URL}" target="_blank"><i class="fas fa-book fa-2x"></i></a></li>
-{/block:IfBrog}
+{block:IfBlog}
+<li class="hint--bottom hint--rounded sociallink-item" data-hint="Blog"><a href="{text:Blog URL}" target="_blank"><i class="fas fa-book fa-2x"></i></a></li>
+{/block:IfBlog}
 
 {block:IfTwitter}
 <li class="hint--bottom hint--rounded sociallink-item" data-hint="Twitter"><a href="https://twitter.com/{text:Twitter Username}" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -259,7 +256,7 @@ body{
     
 <ul class="secondcontent list-unstyled">
     
-<!-- 出演情報はここの項目をコピーして増やす -->
+<!-- 出演情報はここの項目をコピー・番号を変えて複製 -->
 <li><a href="{text:info1 URL}" target="_blank">{text:info1}</a></li>
 <li><a href="{text:info2 URL}" target="_blank">{text:info2}</a></li>
 <li><a href="{text:info3 URL}" target="_blank">{text:info3}</a></li>
@@ -380,7 +377,9 @@ Quick Biographer theme by <a href="https://yuriz0-lz.tumblr.com" target="_blank"
     }
   });
 });
-
+    
+/*リンクの制御*/
+    
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
