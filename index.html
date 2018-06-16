@@ -63,7 +63,7 @@
 
 <!-- 出演情報類の追加はここを増やす -->
 <meta name="text:info1" content="20XX/YY/ZZ(Sat.) 24:00- Hoge night @club hogehoge" />
-<meta name="text:info1 URL"content="#" />
+<meta name="text:info1 URL" content="#" />
 <meta name="text:info2" content="20XX/YY/WW(Sun.) TBA" />
 <meta name="text:info2 URL" content="#" />
 <meta name="text:info3" content="" />
@@ -257,9 +257,9 @@
 <ul class="secondcontent list-unstyled">
     
 <!-- 出演情報はここの項目をコピー・番号を変えて複製 -->
-<li><a href="{text:info1 URL}" target="_blank">{text:info1}</a></li>
-<li><a href="{text:info2 URL}" target="_blank">{text:info2}</a></li>
-<li><a href="{text:info3 URL}" target="_blank">{text:info3}</a></li>
+<li><a href="{text:info1 URL}" id="info1" target="_blank">{text:info1}</a></li>
+<li><a href="{text:info2 URL}" id="info2" target="_blank">{text:info2}</a></li>
+<li><a href="{text:info3 URL}" id="info3" target="_blank">{text:info3}</a></li>
 
 
 </ul>
@@ -377,8 +377,20 @@ Quick Biographer theme by <a href="https://yuriz0-lz.tumblr.com" target="_blank"
     }
   });
 });
+
+$(function() {
     
-/*リンクの制御*/
+$('li>a').each(function() {
+	var $href = $(this).attr('href');
+	if ($href == "#") {
+		$(this).addClass('disabled');
+	}
+    
+    $('.disabled').removeAttr('href');
+    
+});
+
+});
     
 </script>
 
