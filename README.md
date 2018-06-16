@@ -61,10 +61,10 @@ index.htmlの中身を全てコピーし、元々書かれているHTMLに上書
 | Photo1,2       |写真をアップロードします。デフォルトでは2枚までアーティスト写真等をアップロードできます。<br>大きな画面(横幅401px以上)では1辺400px、小さな画面(横幅400px以下)では350pxの正方形で表示されるので、それよりも大きなサイズの正方形大が推奨です。1辺が倍の800px確保できているのが推奨。| 
 | Dark Color    | ページ内、暗い部分の背景色。<br>文字色は白・リンク色が青系の色になっているので、それが見えるような色が良いと思います。  | 
 | Muliple Photos | 2枚目の写真をアップする場合はチェックを入れる。<br>ここにチェックを入れないと二枚目が表示されません。| 
-| Mail Address<br>Brog<br>Twitter<br>SoundCloud<br>Mixcloud<br>Instagram<br>YouTube  |それぞれのサービスアイコンを表示するかどうか。<br>この後の項目にアドレス・IDを入力してもここにチェックが入ってないと表示されないので注意。| 
+| Mail Address<br>Blog<br>Twitter<br>SoundCloud<br>Mixcloud<br>Instagram<br>YouTube  |それぞれのサービスアイコンを表示するかどうか。<br>この後の項目にアドレス・IDを入力してもここにチェックが入ってないと表示されないので注意。| 
 |Soundcloud Embed<br>Mixcloud Embed| それぞれ埋め込みプレーヤーを表示するかどうか。 | 
 |Credit       | クレジット・所属などを記入します。    | 
-| mailto<br>Brog URL<br>[hoge]username<br>（[hoge]には各種サービス名)       |各コンテンツのUsername(メールはメールアドレス)を入力。<br>メールアドレス公開に対するスパム対策はご自身でお願い致します。| 
+| mailto<br>Blog URL<br>[hoge]username<br>（[hoge]には各種サービス名)       |各コンテンツのUsername(メールはメールアドレス)を入力。<br>メールアドレス公開に対するスパム対策はご自身でお願い致します。| 
 | Heading       | 出演情報やリリース情報などにつけるタイトル・見出し    | 
 | info1-3       | デフォルトでは3つまで、出演情報など    | 
 | info1-3 URL       | 上記に対応する詳細URL等    | 
