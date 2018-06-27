@@ -211,17 +211,23 @@
 
                         {block:IfMailAddress}
                         <li class="hint--bottom hint--rounded sociallink-item" data-hint="Mail"><a href="mailto:{text:Mailto}"><i class="fas fa-envelope fa-2x"></i></a></li>
-                        {/block:IfMailAddress} {block:IfBlog}
+                        {/block:IfMailAddress}
+                        {block:IfBlog}
                         <li class="hint--bottom hint--rounded sociallink-item" data-hint="Blog"><a href="{text:Blog URL}" target="_blank"><i class="fas fa-book fa-2x"></i></a></li>
-                        {/block:IfBlog} {block:IfTwitter}
+                        {/block:IfBlog}
+                        {block:IfTwitter}
                         <li class="hint--bottom hint--rounded sociallink-item" data-hint="Twitter"><a href="https://twitter.com/{text:Twitter Username}" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-                        {/block:IfTwitter} {block:IfSoundCloud}
+                        {/block:IfTwitter}
+                        {block:IfSoundCloud}
                         <li class="hint--bottom hint--rounded sociallink-item" data-hint="SoundCloud"><a href="https://soundcloud.com/{text:SoundCloud Username}" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a></li>
-                        {/block:IfSoundCloud} {block:IfMixcloud}
+                        {/block:IfSoundCloud}
+                        {block:IfMixcloud}
                         <li class="hint--bottom hint--rounded sociallink-item" data-hint="Mixcloud"><a href="https://www.mixcloud.com/{text:Mixcloud Username}/" target="_blank"><i class="fab fa-mixcloud fa-2x"></i></a></li>
-                        {/block:IfMixcloud} {block:IfInstagram}
+                        {/block:IfMixcloud}
+                        {block:IfInstagram}
                         <li class="hint--bottom hint--rounded sociallink-item" data-hint="Instagram"><a href="http://instagram.com/{text:Instagram Username}" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-                        {/block:IfInstagram} {block:IfYouTube}
+                        {/block:IfInstagram}
+                        {block:IfYouTube}
                         <li class="hint--bottom hint--rounded sociallink-item" data-hint="YouTube"><a href="http://youtube.com/{text:YouTube Username}" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
                         {/block:IfYoutube}
 
@@ -301,12 +307,13 @@
 
 
         <!-- フッター (Please Do not delete this section)-->
+        <div class="row">
         <footer class="footerpg">
 
             {CopyrightYears} &copy; {title} <br> Quick Biographer theme by <a href="https://yuriz0-lz.tumblr.com" target="_blank">Yurizo</a>
 
         </footer>
-
+        </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
