@@ -1,4 +1,4 @@
-# Quick Biographer(β)
+# Quick Biographer 1.0
 
 ## はじめに
 忙しい人の為のシンプルなtumblr向け1ページバイオグラフィー作成テンプレートです。  
